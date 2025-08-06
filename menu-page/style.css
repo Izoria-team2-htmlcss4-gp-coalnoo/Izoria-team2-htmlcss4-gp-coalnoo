@@ -54,6 +54,8 @@
     width: 100%;
     max-width: 260px;
     margin: 0 auto;
+    overflow: hidden;
+    position: relative;
   }
   
   .menu-image-wrapper img {
@@ -61,16 +63,35 @@
     height: auto;
     object-fit: cover;
     aspect-ratio: 1;
+    transition: transform 0.3s ease;
+    transform-origin: center;
+  }
+  
+  .menu-image-wrapper:hover img {
+    transform: scale(1.1);
   }
   
   /* Typography */
   h6 {
     font-size: 0.875rem;
     font-family: "Montserrat", sans-serif;
+    transition: color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  h6:hover {
+    color: var(--primary-color);
   }
   
   .small {
     font-size: 0.8rem;
+  }
+  
+  /* Hover effect for the entire menu item */
+  .col:hover h6,
+  .col:hover .gray-text,
+  .col:hover .text-muted {
+    color: var(--primary-color);
   }
 
   .mb-12 {
