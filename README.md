@@ -191,12 +191,6 @@ git clone https://github.com/Izoria-team2-htmlcss4-gp-coalnoo/Izoria-team2-htmlc
 
 팀 프로젝트를 위한 HTML과 CSS 코딩 컨벤션입니다.
 
-## 📋 목차
-
-- [HTML 규칙](#html-규칙)
-- [CSS 규칙](#css-규칙)
-- [주의사항](#주의사항)
-
 ## 🏗 HTML 규칙
 
 ### 문서 구조
@@ -268,18 +262,8 @@ git clone https://github.com/Izoria-team2-htmlcss4-gp-coalnoo/Izoria-team2-htmlc
 
 ### 네이밍 컨벤션
 ```css
-/* BEM 방법론 사용 */
-.block {}
-.block__element {}
-.block--modifier {}
 
-/* 예시 */
-.card {}
-.card__header {}
-.card__body {}
-.card--featured {}
-
-/* 또는 의미 있는 클래스명 사용 */
+/* 의미 있는 클래스명 사용 */
 .navigation-menu {}
 .product-listing {}
 .user-profile {}
