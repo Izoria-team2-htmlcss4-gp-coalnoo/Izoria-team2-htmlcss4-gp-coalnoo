@@ -1,0 +1,8 @@
+:root{
+  --primary-color : #ffb87d;
+  --second-color : #182244;
+}
+main{
+  height: 800px;
+  width: 100%;
+}
