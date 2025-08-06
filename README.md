@@ -191,7 +191,7 @@ git clone https://github.com/Izoria-team2-htmlcss4-gp-coalnoo/Izoria-team2-htmlc
 
 팀 프로젝트를 위한 HTML과 CSS 코딩 컨벤션입니다.
 
-## 🏗 HTML 규칙
+## HTML 규칙
 
 ### 문서 구조
 ```html
@@ -226,7 +226,7 @@ git clone https://github.com/Izoria-team2-htmlcss4-gp-coalnoo/Izoria-team2-htmlc
 <section class="product-card-container">
 ```
 
-## 🎨 CSS 규칙
+## CSS 규칙
 
 ### 포맷팅 및 구성
 ```css
