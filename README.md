@@ -58,7 +58,7 @@
 
 ## 반응형 디자인
 
-### 미디어쿼리 (에)
+### 미디어쿼리 (예)
 ```css
 @media screen and (max-width: 48rem) {
     .hero-title {
