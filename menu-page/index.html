@@ -258,32 +258,6 @@
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
-    <script>
-      // Category filtering
-      document.querySelectorAll('.category-link').forEach(link => {
-        link.addEventListener('click', function(e) {
-          e.preventDefault();
-          
-          // Remove active class from all links
-          document.querySelectorAll('.category-link').forEach(l => l.classList.remove('active'));
-          // Add active class to clicked link
-          this.classList.add('active');
-          
-          // Get selected category
-          const category = this.getAttribute('data-category');
-          
-          // Show/hide items based on category
-          document.querySelectorAll('[data-category]').forEach(item => {
-            if (item.classList.contains('col')) {
-              if (category === 'all' || item.getAttribute('data-category') === category) {
-                item.style.display = 'block';
-              } else {
-                item.style.display = 'none';
-              }
-            }
-          });
-        });
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
