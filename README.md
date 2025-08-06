@@ -130,7 +130,6 @@
 - 반응형 그리드 시스템
 - 부트스트랩 컴포넌트 활용
 - 호버 애니메이션 효과
-- 부드러운 스크롤링
 - 미디어쿼리 적용
 - CSS 변수 시스템
 
@@ -186,6 +185,166 @@ git clone https://github.com/Izoria-team2-htmlcss4-gp-coalnoo/Izoria-team2-htmlc
 ```
 
 브라우저에서 `index.html` 파일을 열어 실행하세요.
+
+
+# HTML/CSS 코딩 규칙 가이드
+
+팀 프로젝트를 위한 HTML과 CSS 코딩 컨벤션입니다.
+
+## 📋 목차
+
+- [HTML 규칙](#html-규칙)
+- [CSS 규칙](#css-규칙)
+- [주의사항](#주의사항)
+
+## 🏗 HTML 규칙
+
+### 문서 구조
+```html
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>페이지 제목</title>
+</head>
+<body>
+    <!-- 콘텐츠 내용 -->
+</body>
+</html>
+```
+
+### 네이밍 및 포맷팅
+- **소문자 사용**: 모든 요소와 속성은 소문자로 작성
+- **쌍따옴표 사용**: 속성값에는 쌍따옴표(`"`) 사용
+- **들여쓰기**: 2칸 또는 4칸 공백 사용 (일관성 유지)
+- **태그 닫기**: 자기 닫기 태그도 닫기 표시: `<img src="..." alt="..." />`
+- **시맨틱 태그 사용**: `<header>`, `<nav>`, `<main>`, `<article>`, `<section>`, `<footer>`
+
+### 클래스 및 ID 네이밍
+```html
+<!-- 케밥 케이스 사용 -->
+<div class="header-navigation">
+<div id="main-content">
+
+<!-- 명확한 이름 사용 -->
+<button class="btn-primary-large">
+<section class="product-card-container">
+```
+
+## 🎨 CSS 규칙
+
+### 포맷팅 및 구성
+```css
+/* 일관된 들여쓰기 사용 */
+.selector {
+    property: value;
+    property: value;
+}
+
+/* 관련 속성끼리 그룹화 */
+.element {
+    /* 위치 관련 */
+    position: relative;
+    top: 0;
+    left: 0;
+    
+    /* 박스 모델 */
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    padding: 5px;
+    
+    /* 타이포그래피 */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    
+    /* 시각적 효과 */
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+```
+
+### 네이밍 컨벤션
+```css
+/* BEM 방법론 사용 */
+.block {}
+.block__element {}
+.block--modifier {}
+
+/* 예시 */
+.card {}
+.card__header {}
+.card__body {}
+.card--featured {}
+
+/* 또는 의미 있는 클래스명 사용 */
+.navigation-menu {}
+.product-listing {}
+.user-profile {}
+```
+
+### 모범 사례
+
+#### CSS 구성 순서
+```css
+/* 1. 리셋/노말라이즈 스타일 */
+/* 2. 기본 스타일 (html, body 등) */
+/* 3. 레이아웃 컴포넌트 */
+/* 4. UI 컴포넌트 */
+/* 5. 유틸리티 클래스 */
+```
+
+#### 색상 및 단위
+```css
+/* CSS 커스텀 속성 사용 */
+:root {
+    --primary-color: #007bff;
+    --text-color: #333;
+    --spacing-unit: 1rem;
+}
+
+/* 상대 단위 선호 */
+.container {
+    max-width: 1200px;
+    padding: 2rem;
+    font-size: 1.125rem; /* 18px */
+}
+```
+
+
+## 피해야 할 것들
+
+### HTML/CSS
+- 인라인 스타일 사용
+
+## 📝 주석 작성법
+
+### HTML 주석
+```html
+<!-- 헤더 섹션 시작 -->
+<header class="main-header">
+    <!-- 내비게이션 -->
+    <nav class="main-nav">
+        <!-- 메뉴 항목들 -->
+    </nav>
+</header>
+<!-- 헤더 섹션 끝 -->
+```
+
+### CSS 주석
+```css
+/* ===== 헤더 컴포넌트 ===== */
+.header {
+    /* 메인 헤더 스타일 */
+}
+
+/* 헤더 내 내비게이션 */
+.header__nav {
+    /* 내비게이션 스타일 */
+}
+```
 
 ## 브라우저 호환성
 
