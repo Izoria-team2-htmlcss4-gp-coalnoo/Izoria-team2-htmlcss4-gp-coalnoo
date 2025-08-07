@@ -1,0 +1,11 @@
+@media screen and (max-width: 48rem) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    .hero-section {
+        height: 70vh;
+    }
+    .menu-card {
+        margin-bottom: 2rem;
+    }
+}
