@@ -12,6 +12,8 @@
   color: var(--second-color);
 }
 .navbar-brand img{
+  width: 30px;
+  height: 12px;
   padding-right: 5px;
 }
 a {
