@@ -18,77 +18,88 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="/common.css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="/js/common-load.js"></script>
   </head>
   <body>
     <div id="nav-placeholder"></div>
-    <main>
-      <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-        <span class="fsize20 pt-26 pd-10">RECRUIT</span>
+    <main class="container">
+      <div class="col-lg-4 col-md-6 col-sm-12 text-center container">
+        <span class="fsize20 fs-5 text-muted">RECRUIT</span>
       </div>
-      <div class="container row d-flex justify-content-center">
-        <div class="col-xs-12 col-sm-4 col-md-4 left">
+      <div class="row main-second">
+        <div class="col-lg-4 col-md-6 col-sm-12 left">
           <h2><strong class="point-color">RECRUIT</strong></h2>
-          <div>
+          <div class="mt-3">
             <span>이조리아를 함께 이끌어갈 인재를</span>
             <span>모집합니다.</span>
           </div>
-          <div>
+          <div class="mt-5">
             <span><strong class="point-color">TEL.</strong></span>
           </div>
           <div>
             <span>T. 12 3456 78910</span>
           </div>
-          <div>
+          <div class="mt-5">
             <span><strong class="point-color">E-Mail</strong></span>
           </div>
           <div>
             <span>recruit@izoria.co.kr</span>
           </div>
         </div>
-        <div class="col-xs-12 col-sm-8 col-md-8 col-sm-offset-0 right">
+        <div class="col-lg-4 col-md-6 col-sm-12 right">
           <div class="form-inline">
             <div class="form-group">
               <h3>이름</h3>
-              <input>
+              <div class="input-group input-group-sm mb-3">
+              <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+              </div>
             </div>
             <div class="form-group">
               <h3>이메일</h3>
-              <input>
+              <div class="input-group input-group-sm mb-3">
+              <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+              </div>
             </div>
             <div class="form-group">
               <h3>휴대전화</h3>
               <p>하이픈(-)없이 숫자만 입력</p>
-              <input>
+              <div class="input-group input-group-sm mb-3">
+              <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+              </div>
             </div>
             <div class="form-group">
-              <h3>지점</h3>
-              <select>
-                <option value>선택하세요</option>
+              <h3 class="mt-4">지점</h3>
+              <select class="form-select" aria-label="Default select example">
+                <option aria-selected="">선택하세요</option>
                 <option value="강남점">강남점</option>
                 <option value="종로점">종로점</option>
                 <option value="부산점">부산점</option>
               </select>
             </div>
             <div class="form-group">
-              <h3>지원부문</h3>
-              <select>
-                <option value>선택하세요</option>
+              <h3 class="mt-4">지원부문</h3>
+              <select class="form-select" aria-label="Default select example">
+                <option>선택하세요</option>
                 <option value="서비스">서비스</option>
                 <option value="조리">조리</option>
               </select>
             </div>
             <div class="form-group">
-              <h3>이력서</h3>
+              <h3 class="mt-4">이력서</h3>
               <p>PDF, HWP, DOC</p>
-              <div></div>
+              <div>
+                <div class="input-group mb-3">
+                <input type="file" class="form-control" id="inputGroupFile02">
+                </div>
+              </div>
             </div>
              <div class="form-group">
              <div></div>
              </div>
-            <div>
-              <span>
-                <button type="button" class="btn btn-danger">지원하기</button>
+            <div class="mt-5">
+              <span class="d-flex">
+                <button type="button" class="btn btn-danger ms-auto mb-5">지원하기</button>
               </span>
             </div>
           </div>
