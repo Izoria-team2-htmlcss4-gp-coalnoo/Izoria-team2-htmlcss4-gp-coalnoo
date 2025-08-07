@@ -1,0 +1,123 @@
+
+/* Menu title styling */
+.menu-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  color: var(--second-color);
+}
+
+.menu-title-line {
+  width: 50px;
+  height: 2px;
+  background-color: var(--second-color);
+}
+
+/* Category links */
+.category-link {
+    color: #a9a9a9;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  
+  .category-link:hover {
+    color: var(--primary-color);
+  }
+  
+  .category-link.active {
+    color: var(--primary-color);
+  }
+  
+  .category-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+  }
+  
+  .category-link:hover::after,
+  .category-link.active::after {
+    width: 100%;
+  }
+  
+  /* Menu images */
+  .menu-image-wrapper {
+    width: 100%;
+    max-width: 260px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .menu-image-wrapper img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 1;
+    transition: transform 0.3s ease;
+    transform-origin: center;
+  }
+  
+  .menu-image-wrapper:hover img {
+    transform: scale(1.1);
+  }
+  
+  /* Typography */
+  h6 {
+    font-size: 0.875rem;
+    font-family: "Montserrat", sans-serif;
+    transition: color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  h6:hover {
+    color: var(--primary-color);
+  }
+  
+  .small {
+    font-size: 0.8rem;
+  }
+  
+  /* Hover effect for the entire menu item */
+  .col:hover h6,
+  .col:hover .gray-text,
+  .col:hover .text-muted {
+    color: var(--primary-color);
+  }
+
+  .mb-12 {
+    margin-bottom: 1.4rem;
+  }
+
+  .gray-text {
+    color: #a9a9a9
+  }
+  
+  /* Responsiveness*/
+  @media (max-width: 576px) {
+    .menu-image-wrapper {
+      max-width: 100%;
+    }
+    
+    .menu-image-wrapper img {
+      aspect-ratio: auto;
+      height: auto;
+    }
+    
+    h6 {
+      font-size: 0.75rem;
+    }
+    
+    .small {
+      font-size: 0.7rem;
+    }
+  }

@@ -18,11 +18,239 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="/common.css" />
+    <link rel="stylesheet" href="style.css" />
     <script src="/js/common-load.js"></script>
   </head>
   <body>
     <div id="nav-placeholder"></div>
-    <main>메뉴 페이지</main>
+    <main class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="menu-title text-uppercase mb-4">MENU</h2>
+          <div class="menu-title-line mx-auto"></div>
+        </div>
+        
+        <!-- Category navigation -->
+        <div class="d-flex flex-wrap justify-content-center gap-4 mb-5 category-nav">
+          <a href="#" class="category-link active" data-category="all">All</a>
+          <a href="#" class="category-link" data-category="steak">Steak and Stew</a>
+          <a href="#" class="category-link" data-category="pasta">Pasta</a>
+          <a href="#" class="category-link" data-category="poke">Poke Bowl</a>
+          <a href="#" class="category-link" data-category="salad">Salad</a>
+        </div>
+
+        <!-- Menu Grid -->
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-5 g-3 mb-12">
+          <!-- Row 1 -->
+          <div class="col" data-category="pasta">
+            <div class="text-center">
+              <div class="menu-image-wrapper mb-3">
+                <img src="https://lh3.googleusercontent.com/UlsHQwSeccl8pRJZmpXgHGsPbP22qvwtjygbIq8JZMhufD_7rGdoL66PY6bb2ZcW27Viyy_swcu97aj7gnL7FRJ7AaACh--fUio_bq7tiapFz7-QN6E7rA=w800" class="img-fluid" alt="Red Ragu Cream Pasta">
+              </div>
+              <h6 class="fw-medium mb-2">RED RAGU CREAM PASTA</h6>
+              <p class="gray-text small mb-12">레드 라구 크림 파스타</p>
+            </div>
+          </div>
+          <div class="col" data-category="pasta">
+            <div class="text-center">
+              <div class="menu-image-wrapper mb-3">
+                <img src="https://lh3.googleusercontent.com/Qge9qia0J5Csel6_6I4s6X_lvHnRv2yxlCFfeUSKcwotAD5bQSJJx82LrVRVtzXwKiR9Hmhy-v8BKmfaW6rqFpYGpt8z9OhtC3ycOz_iUm755xJete9nMg=w800" class="img-fluid" alt="Red Shrimp Cream Pasta">
+              </div>
+              <h6 class="fw-medium mb-2">RED SHRIMP CREAM PASTA</h6>
+              <p class="gray-text small mb-12">레드 쉬림프 크림 파스타</p>
+            </div>
+          </div>
+          <div class="col" data-category="pasta">
+            <div class="text-center">
+              <div class="menu-image-wrapper mb-3">
+                <img src="https://lh3.googleusercontent.com/-_SaUqzdVeJFppJP4uI7iDyx_qVYIH3fM7tQI0JfWp67G6778pDlkSSgPFvDOHUn_E0BUuyyRtQP6OH290wHmTFE9KmBCJJtPKX_rvX_0FMzN1QfSXQr7Q=w800" class="img-fluid" alt="White Ragu Cream Pasta">
+              </div>
+              <h6 class="fw-medium mb-2">WHITE RAGU CREAM PASTA</h6>
+              <p class="gray-text small mb-12">화이트 라구 크림 파스타</p>
+            </div>
+          </div>
+          <div class="col" data-category="pasta">
+            <div class="text-center">
+              <div class="menu-image-wrapper mb-3">
+                <img src="https://lh3.googleusercontent.com/8Nk8tRcGnAXnMc7VyvPKiEI5l1whU4jd3XgWyfmHFmX5ocpjV6_DTARRhMBitZ2C5gW-IRv2KPE5hIXpIzQjKEUfyT_GmfaygQYARpo-mwILfdfmGgew=w800" class="img-fluid" alt="Snow Lemon Cold Pasta">
+              </div>
+              <h6 class="fw-medium mb-1">SNOW LEMON COLD PASTA</h6>
+              <p class="gray-text small mb-12">스노우 레몬 냉 파스타</p>
+            </div>
+          </div>
+          <div class="col" data-category="salad">
+            <div class="text-center">
+              <div class="menu-image-wrapper mb-3">
+                <img src="https://lh3.googleusercontent.com/bRkrd-J2cixorNgDjij1E6q-OVyvDrsfvdTc1KPQHyhjNGnSQITtBRzFnqfXm-dpFDOY2EPEcsNVTMXN2o_Z4ucbU5uVFgPnNcmDPbEjzs9UAp5SsxuF2mQ=w800" class="img-fluid" alt="Chargrilled Coucle Cold Pasta">
+              </div>
+              <h6 class="fw-medium mb-1">CHAMNAMUL COUCLE COLD PASTA</h6>
+              <p class="gray-text small mb-12">참나물 꼬막 콜드 샐러드</p>
+            </div>
+          </div>
+
+          <!-- Row 2 -->
+          <div class="col" data-category="pasta">
+            <div class="text-center">
+              <div class="menu-image-wrapper mb-3">
+                <img src="https://lh3.googleusercontent.com/lxov0FNvsKCht4_ZPYEPSCuoEQyrTsKLvd16zmZoK4-pACvLUttUBSzPCBXnjoW9nuvTY-XuJokSnYegpNFmbdPtir0-MKtuvHLBmtfQTJIqyLuBdR-lzGE=w800" class="img-fluid" alt="Oven Cheese Pasta">
+              </div>
+              <h6 class="fw-medium mb-1">OVEN CHEESE PASTA</h6>
+              <p class="gray-text small mb-12">오븐 치즈 파스타</p>
+            </div>
+          </div>
+          <div class="col" data-category="salad">
+            <div class="text-center">
+              <div class="menu-image-wrapper mb-3">
+                <img src="https://lh3.googleusercontent.com/jT4MyDQfkzo3uSWVJtcGk0SnyvcponGZNJQW_aSHTaK68wN3lG7FtH2hK84wopYvPksMUx8ziHAPVx_Q7fnHW0PsIoPJySvCQa4ZWB2GfiuHblosp0yVfeY=w800" class="img-fluid" alt="Baby Napoli Cabbage Salad">
+              </div>
+              <h6 class="fw-medium mb-1">BABY NAPOLI CABBAGE SALAD</h6>
+              <p class="gray-text small mb-12">베이비 나폴리 양배추 샐러드</p>
+            </div>
+          </div>
+          <div class="col" data-category="poke">
+            <div class="text-center">
+              <div class="menu-image-wrapper mb-3">
+                <img src="https://lh3.googleusercontent.com/IUaB6SaXv9r4yFztetma5lfcDCmwULNQmc3BfxR8moCYvTWh9JbP3onDBmcKcfNPkS4pw8Qy5uQmem46LUZcA9nw7m6EQN_8H09gVv-Io6OjDtyDYisDM1E=w800" class="img-fluid" alt="Ragu Poke">
+              </div>
+              <h6 class="fw-medium mb-1">RAGU POKE</h6>
+              <p class="gray-text small mb-12">라구 포케</p>
+            </div>
+          </div>
+          <div class="col" data-category="steak">
+            <div class="text-center">
+              <div class="menu-image-wrapper mb-3">
+                <img src="https://lh3.googleusercontent.com/vf9IkDL__iBwMGdBSpraNqEm1VCxyUTS4FSm_oM4GfvfSGpCY174iLH2or7gBFIYFfrMSxMXvTQvQmyKmRTmIU9cUu1H96RepXj6Nrf24quWZPJWXLw4WQ=w800" class="img-fluid" alt="Bobi Steak">
+              </div>
+              <h6 class="fw-medium mb-1">IZO STEAK</h6>
+              <p class="gray-text small mb-12">이조 스테이크</p>
+            </div>
+          </div>
+          <div class="col" data-category="steak">
+            <div class="text-center">
+              <div class="menu-image-wrapper mb-3">
+                <img src="https://lh3.googleusercontent.com/hzOnXPQI4Ufi8lOPqRfw1eUXTgQQn3Zbq8Ag9tvYIWVhcjo3vvkB6lD8KZYvtn3vlPp-Q8U6N4veQ8eW6C4KS25OwZLoeMyFk8_9Ug-eQpzSGo-35uWcqsc=w800" class="img-fluid" alt="Bobi Chicken Steak">
+              </div>
+              <h6 class="fw-medium mb-1">IZO CHICKEN STEAK</h6>
+              <p class="gray-text small mb-12">이조 치킨 스테이크</p>
+            </div>
+          </div>
+
+          <!-- Row 3 -->
+          <div class="col" data-category="steak">
+            <div class="text-center">
+              <div class="menu-image-wrapper mb-3">
+                <img src="https://lh3.googleusercontent.com/Ts9tApsWx_A7Xu2Z70zp3_85VJSa8RLLSliXN5vDAaFybchNAfzq-2uqYGbX97T5yH4qTn6x7eGXOFSGVg6U6fHUoNW-fb5_UDPtShaO5JcQJnnn5R99=w800" class="img-fluid" alt="Red Galbi Stew">
+              </div>
+              <h6 class="fw-medium mb-1">RED GALBI STEW</h6>
+              <p class="gray-text small mb-12">레드 갈비 스튜</p>
+            </div>
+          </div>
+          <div class="col" data-category="galbi">
+            <div class="text-center">
+              <div class="menu-image-wrapper mb-3">
+                <img src="https://lh3.googleusercontent.com/DEvLi_x8Vgpqmg77tx_NOA4cgqdj1D8hQItHbYV2mwgbhkmIA-_uIOhQw5X-5GAv35VhQUV934r303rKIRoKjr2GN1mWCk3Vg4d5mRD4YU86TKJr2Zczvw=w800" class="img-fluid" alt="Red Cream Galbi Stew">
+              </div>
+              <h6 class="fw-medium mb-1">RED CREAM GALBI STEW</h6>
+              <p class="gray-text small mb-12">레드 크림 갈비 스튜</p>
+            </div>
+          </div>
+          <div class="col" data-category="galbi">
+            <div class="text-center">
+              <div class="menu-image-wrapper mb-3">
+                <img src="https://lh3.googleusercontent.com/vld1Q2LPv_2qpf0N-tZ0Bm-q6UEOo61YVKiIxcOWuCf8Ro1ZMOB2KlIhenZ7lPYNvsKWrxr_CooiwLlNKyp6INi8-XG7JRKrhGOasAJ62SFPE7nEWHXn=w800" class="img-fluid" alt="Red Tomato Galbi Stew">
+              </div>
+              <h6 class="fw-medium mb-1">RED TOMATO GALBI STEW</h6>
+              <p class="gray-text small mb-12">레드 토마토 갈비 스튜</p>
+            </div>
+          </div>
+          <div class="col" data-category="pasta">
+            <div class="text-center">
+              <div class="menu-image-wrapper mb-3">
+                <img src="https://lh3.googleusercontent.com/zHGc1_mxl_MZR_D3D8gCtbRSUJ7_HNwEafAd-r7z7Py-EOUoT7_Irav0WfUD9Xt57JiYScSWFgyCWIPnpW5VZc7EXtv5VT4_j5lTzPndmYjFeadAjNd2Hw=w800" class="img-fluid" alt="Red Cream Pasta">
+              </div>
+              <h6 class="fw-medium mb-1">RED CREAM PASTA</h6>
+              <p class="gray-text small mb-12">레드 크림 파스타</p>
+            </div>
+          </div>
+          <div class="col" data-category="pasta">
+            <div class="text-center">
+              <div class="menu-image-wrapper mb-3">
+                <img src="https://lh3.googleusercontent.com/qL-y5J0J-jP4T8lzssviFaOhbUAHx5jD4pwSp1PnG17oM3DaiQie3AW8VPofckYpKnsQYETPW_Fo81-1imVSQtSe3Jeeh_VIno_STQZCtuZ6CTXOkFrW=w800" class="img-fluid" alt="Red Tomato Pasta">
+              </div>
+              <h6 class="fw-medium mb-1">RED TOMATO PASTA</h6>
+              <p class="gray-text small mb-12">레드 토마토 파스타</p>
+            </div>
+          </div>
+
+          <!-- Row 4 -->
+          <div class="col" data-category="pasta">
+            <div class="text-center">
+              <div class="menu-image-wrapper mb-3">
+                <img src="https://lh3.googleusercontent.com/zlVyVyjfbtL8t8YdOWupafUF4O8Zr0fvP9BP1quojiIL1oE8vEJ7DrUHtzcpPppC-h1LR1J71Gvpnr_9JE4_HqZwcc-uwrs7RjsINzo1CkuXG_EuxLI_dw=w800" class="img-fluid" alt="Red Curry Pasta">
+              </div>
+              <h6 class="fw-medium mb-1">RED CURRY PASTA</h6>
+              <p class="gray-text small mb-12">레드 커리 파스타</p>
+            </div>
+          </div>
+          <div class="col" data-category="pasta">
+            <div class="text-center">
+              <div class="menu-image-wrapper mb-3">
+                <img src="https://lh3.googleusercontent.com/9k39z0ACWW_zg_K2K5ZPbECUDbz0XLGgpdqLMa-Bn6kOEys01wU2WPqzmgLfUY289npSOKvO4-Oqc8WNFE-KChKGZu6HZEkrl5W629aW9UedcO2awcPc_g=w800" class="img-fluid" alt="Red Garlic Rossta">
+              </div>
+              <h6 class="fw-medium mb-1">RED GARLIC ROSSTA</h6>
+              <p class="gray-text small mb-12">레드 갈릭 로스타</p>
+            </div>
+          </div>
+          <div class="col" data-category="pasta">
+            <div class="text-center">
+              <div class="menu-image-wrapper mb-3">
+                <img src="https://lh3.googleusercontent.com/DpHV0ego7JkF68GW731M6taexGW-NYA5n8M5PV3dlmhgGi3QcEzHbredlft4e3swKbD4JUjvWEhuD49qQUbBIfqhe6wBG_KpH3hkyjvEAw9_ekceTN8hdA=w800" class="img-fluid" alt="Red Soy Pasta">
+              </div>
+              <h6 class="fw-medium mb-1">RED SOY PASTA</h6>
+              <p class="gray-text small mb-12">레드 간장 파스타</p>
+            </div>
+          </div>
+          <div class="col" data-category="poke">
+            <div class="text-center">
+              <div class="menu-image-wrapper mb-3">
+                <img src="https://lh3.googleusercontent.com/M9Tpsvk3isPzFFm8H0Il7E4MorgvtB7sIQ-dSKGwWuvxsJLBIu5qkh-yFI8QNtN3jeZbDmV4bkrSUi34KRiFyJu_FDQ8k0fP7itkEh8G9x8R0weNGuNaMA=w800" class="img-fluid" alt="Bobi Steak Poke">
+              </div>
+              <h6 class="fw-medium mb-1">IZO STEAK POKE</h6>
+              <p class="gray-text small mb-12">이조 스테이크 포케</p>
+            </div>
+          </div>
+          <div class="col" data-category="poke">
+            <div class="text-center">
+              <div class="menu-image-wrapper mb-3">
+                <img src="https://lh3.googleusercontent.com/PNDukQzxZFktECM6IFNPaUqtsr_cG42RulKwvu1mxNH0YhxVe-lJCcB89EF2o5vDuHi_iH0bOqIdAUcRIeBKVggaBNX6SQYU3dRbSx1Svs4NCRKMyyEDyn0=w800" class="img-fluid" alt="Bobi Galbi Poke">
+              </div>
+              <h6 class="fw-medium mb-1">IZO GALBI POKE</h6>
+              <p class="gray-text small mb-12">이조 갈비 포케</p>
+            </div>
+          </div>
+
+          <!-- Row 5 -->
+          <div class="col" data-category="poke">
+            <div class="text-center">
+              <div class="menu-image-wrapper mb-3">
+                <img src="https://lh3.googleusercontent.com/HIGZDJB1yJy7e53krC7SKKBZOk-ilj1tlTvQiSJkKHdP274QXTwJu-hrav5-HE_63iJPLb9b2kWS9txRUBWoUmEAwZm-3wsDfgrNdNoEdM48cpuJWkSS1Q=w800" class="img-fluid" alt="Bobi Salmon Poke">
+              </div>
+              <h6 class="fw-medium mb-1">IZO SALMON POKE</h6>
+              <p class="gray-text small mb-12">이조 연어 포케</p>
+            </div>
+          </div>
+          <div class="col" data-category="poke">
+            <div class="text-center">
+              <div class="menu-image-wrapper mb-3">
+                <img src="https://lh3.googleusercontent.com/3pKjeyMpYSFOW1nzOO6NvcYtvkLlMQE-ZP6QeWN1IUj9Ggj_vvADq3h29kttO1QCmMHsBrhGKwxyZCofpN8wNFUn3Q1xI2iEU3EESIpLfYhq1vdfr873=w800" class="img-fluid" alt="Bobi Chicken Poke">
+              </div>
+              <h6 class="fw-medium mb-1">IZO CHICKEN POKE</h6>
+              <p class="gray-text small mb-12">이조 치킨 포케</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <div id="footer-placeholder"></div>
     <!-- 부트스트랩 -->
     <script
@@ -30,5 +258,6 @@
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
   </body>
 </html>
