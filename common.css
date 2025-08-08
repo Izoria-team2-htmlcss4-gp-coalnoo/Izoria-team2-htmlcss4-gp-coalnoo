@@ -1,6 +1,8 @@
 :root{
   --primary-color : #ffb87d;
   --second-color : #182244;
+  --third-color : #ffffff;
+  --fourth-color : #949494;
 }
 /* header */
 .shadows-into-light-regular {
