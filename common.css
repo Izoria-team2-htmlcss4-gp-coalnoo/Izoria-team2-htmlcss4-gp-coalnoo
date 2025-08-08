@@ -1,5 +1,14 @@
+
 /* 폰트 */
 @import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+:root{
+  --primary-color : #ffb87d;
+  --second-color : #182244;
+  --third-color : #ffffff;
+  --fourth-color : #949494;
+}
+
 .shadows-into-light-regular {
   font-family: "Shadows Into Light", cursive;
   font-weight: 100;
@@ -7,16 +16,11 @@
 }
 /* font-family: "Montserrat", sans-serif;  */
 
-
-:root{
-  --primary-color : #ffb87d;
-  --second-color : #182244;
-}
 body{
   padding-top: 56px;
   font-family: 'NanumSquare';
 }
-/* header */
+
 .navbar-brand{
   color: var(--second-color);
 }

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Izoria</title>
+    <link rel="icon" href="/assets/images/utensils-solid-full-orange.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&family=Nanum+Gothic:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/common.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="/js/common-load.js"></script>
+    <script src="dishes-data.js"></script>
+  </head>
+  <body>
+    <div id="nav-placeholder"></div>
+
+    <main class="py-5">
+      <div class="container">
+        <nav class="pt-5 pb-4 mb-4">
+          <div class="d-flex justify-content-between align-items-center small">
+            <a
+              href="index.html"
+              class="text-decoration-none text-secondary small text-uppercase fw-medium"
+            >
+              ← BACK TO LIST
+            </a>
+            <div class="d-flex gap-2 small text-uppercase">
+              <a
+                href="#"
+                class="text-decoration-none text-secondary fw-medium"
+                id="prevLink"
+                >PREV</a
+              >
+              <span class="text-secondary">/</span>
+              <a
+                href="#"
+                class="text-decoration-none text-secondary fw-medium"
+                id="nextLink"
+                >NEXT</a
+              >
+            </div>
+          </div>
+        </nav>
+
+        <article class="mb-5">
+          <div class="row g-5 align-items-center">
+            <div class="col-12 col-lg-6">
+              <figure class="mb-0 position-relative">
+                <div class="overflow-hidden rounded-3 dish-image-bg">
+                  <img
+                    src=""
+                    alt="Loading dish image"
+                    class="img-fluid w-100 dish-image"
+                  />
+                </div>
+                <span
+                  class="position-absolute top-0 start-0 mt-3 ms-3 badge bg-white text-dark px-3 py-2 rounded-pill text-uppercase category-badge"
+                  >Loading</span
+                >
+              </figure>
+            </div>
+
+            <div class="col-12 col-lg-6">
+              <section>
+                <h1 class="display-6 fw-semibold mb-3 dish-title">
+                  Loading...
+                </h1>
+                <p class="text-muted mb-4 dish-subtitle">&nbsp;</p>
+
+                <div class="mb-4 divider-line"></div>
+
+                <p class="lh-lg mb-0 dish-description">&nbsp;</p>
+              </section>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <section class="py-5 mt-5">
+        <div class="container px-3 px-md-4">
+          <div class="d-flex align-items-center">
+            <button class="btn flex-shrink-0" id="scrollLeftBtn">
+              <svg width="24" height="24" fill="currentColor">
+                <path d="M15 18l-6-6 6-6" />
+              </svg>
+            </button>
+
+            <div
+              id="dishScroll"
+              class="d-flex gap-4 overflow-auto scroll-smooth py-1 mx-2 mx-md-3 flex-grow-1 px-1"
+            ></div>
+
+            <button class="btn flex-shrink-0" id="scrollRightBtn">
+              <svg width="24" height="24" fill="currentColor">
+                <path d="M9 6l6 6-6 6" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="dish-detail.js"></script>
+  </body>
+</html>
