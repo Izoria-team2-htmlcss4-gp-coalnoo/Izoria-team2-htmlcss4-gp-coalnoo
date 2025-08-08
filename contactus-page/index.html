@@ -18,13 +18,58 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="/common.css" />
+    <link rel="stylesheet" href="style.css" />
     <script src="/js/common-load.js"></script>
   </head>
   <body>
     <div id="nav-placeholder"></div>
     <main>
-      contact us
-      
+      <div class="title-sec">
+        <div class="title font-for-upper">contact us</div>
+        <div class="line-design-under-title"></div>
+      </div>
+      <section class="py-3">
+        <div class="container form-wrap py-5">
+          <form>
+            <div class="mb-3">
+              <div class="row g-1">
+                <div class="col-12 col-md-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="customerName"
+                    placeholder="NAME"
+                  />
+                </div>
+                <div class="col-12 col-md-6">
+                  
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="EMAIL"
+                  />
+                </div>
+              </div>
+            </div>
+            <input class="form-control mb-3" type="text" placeholder="subject" aria-label="default input example">
+            <textarea class="form-control mb-3 py-2" id="exampleFormControlTextarea1" rows="5" placeholder="MESSAGE"></textarea>
+            <div class="mb-3 form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+              />
+              <label class="form-check-label" for="exampleCheck1"
+                >개인정보 수집 및 이용 동의 / </label
+              >
+              <a href="#">약관 보기</a>
+            </div>
+            <div class="btn-position mt-4"><button type="submit" class="btn btn-outline-dark font-for-upper button-style">SEND MESSAGE</button></div>
+          </form>
+        </div>
+      </section>
     </main>
     <div id="footer-placeholder"></div>
     <script

@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&family=Nanum+Gothic:wght@400;700;800&display=swap"
       rel="stylesheet"
     />
     <link
@@ -18,17 +18,477 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="/common.css" />
+    <link rel="stylesheet" href="style.css" />
     <script src="/js/common-load.js"></script>
+    <script src="dishes-data.js"></script>
   </head>
   <body>
     <div id="nav-placeholder"></div>
-    <main>메뉴 페이지</main>
+    <main class="py-5 my-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="menu-title text-uppercase mb-4">MENU</h2>
+        </div>
+
+        <div
+          class="d-flex flex-wrap justify-content-center gap-4 mb-5 category-nav"
+        >
+          <a href="#" class="category-link active" data-category="all">All</a>
+          <a href="#" class="category-link" data-category="steak"
+            >Steak and Stew</a
+          >
+          <a href="#" class="category-link" data-category="pasta">Pasta</a>
+          <a href="#" class="category-link" data-category="poke">Poke Bowl</a>
+          <a href="#" class="category-link" data-category="salad">Salad</a>
+        </div>
+
+        <div
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-5 g-3 mb-12"
+          id="menuGrid"
+        >
+          <div class="col" data-category="pasta">
+            <a
+              href="dish-detail.html?dish=red-ragu-cream-pasta"
+              class="menu-card-link"
+            >
+              <article class="menu-card h-100">
+                <div class="menu-card-image">
+                  <img
+                    src="https://lh3.googleusercontent.com/UlsHQwSeccl8pRJZmpXgHGsPbP22qvwtjygbIq8JZMhufD_7rGdoL66PY6bb2ZcW27Viyy_swcu97aj7gnL7FRJ7AaACh--fUio_bq7tiapFz7-QN6E7rA=w800"
+                    alt="Red Ragu Cream Pasta"
+                  />
+                </div>
+                <div class="menu-card-content">
+                  <h3 class="menu-card-title">Red Ragu Cream Pasta</h3>
+                  <p class="menu-card-subtitle">레드 라구 크림 파스타</p>
+                </div>
+              </article>
+            </a>
+          </div>
+
+          <div class="col" data-category="pasta">
+            <a
+              href="dish-detail.html?dish=red-shrimp-cream-pasta"
+              class="menu-card-link"
+            >
+              <article class="menu-card h-100">
+                <div class="menu-card-image">
+                  <img
+                    src="https://lh3.googleusercontent.com/Qge9qia0J5Csel6_6I4s6X_lvHnRv2yxlCFfeUSKcwotAD5bQSJJx82LrVRVtzXwKiR9Hmhy-v8BKmfaW6rqFpYGpt8z9OhtC3ycOz_iUm755xJete9nMg=w800"
+                    alt="Red Shrimp Cream Pasta"
+                  />
+                </div>
+                <div class="menu-card-content">
+                  <h3 class="menu-card-title">Red Shrimp Cream Pasta</h3>
+                  <p class="menu-card-subtitle">레드 쉬림프 크림 파스타</p>
+                </div>
+              </article>
+            </a>
+          </div>
+
+          <div class="col" data-category="pasta">
+            <a
+              href="dish-detail.html?dish=white-ragu-cream-pasta"
+              class="menu-card-link"
+            >
+              <article class="menu-card h-100">
+                <div class="menu-card-image">
+                  <img
+                    src="https://lh3.googleusercontent.com/-_SaUqzdVeJFppJP4uI7iDyx_qVYIH3fM7tQI0JfWp67G6778pDlkSSgPFvDOHUn_E0BUuyyRtQP6OH290wHmTFE9KmBCJJtPKX_rvX_0FMzN1QfSXQr7Q=w800"
+                    alt="White Ragu Cream Pasta"
+                  />
+                </div>
+                <div class="menu-card-content">
+                  <h3 class="menu-card-title">White Ragu Cream Pasta</h3>
+                  <p class="menu-card-subtitle">화이트 라구 크림 파스타</p>
+                </div>
+              </article>
+            </a>
+          </div>
+
+          <div class="col" data-category="pasta">
+            <a
+              href="dish-detail.html?dish=snow-lemon-cold-pasta"
+              class="menu-card-link"
+            >
+              <article class="menu-card h-100">
+                <div class="menu-card-image">
+                  <img
+                    src="https://lh3.googleusercontent.com/8Nk8tRcGnAXnMc7VyvPKiEI5l1whU4jd3XgWyfmHFmX5ocpjV6_DTARRhMBitZ2C5gW-IRv2KPE5hIXpIzQjKEUfyT_GmfaygQYARpo-mwILfdfmGgew=w800"
+                    alt="Snow Lemon Cold Pasta"
+                  />
+                </div>
+                <div class="menu-card-content">
+                  <h3 class="menu-card-title">Snow Lemon Cold Pasta</h3>
+                  <p class="menu-card-subtitle">스노우 레몬 냉 파스타</p>
+                </div>
+              </article>
+            </a>
+          </div>
+
+          <div class="col" data-category="pasta">
+            <a
+              href="dish-detail.html?dish=oven-cheese-pasta"
+              class="menu-card-link"
+            >
+              <article class="menu-card h-100">
+                <div class="menu-card-image">
+                  <img
+                    src="https://lh3.googleusercontent.com/lxov0FNvsKCht4_ZPYEPSCuoEQyrTsKLvd16zmZoK4-pACvLUttUBSzPCBXnjoW9nuvTY-XuJokSnYegpNFmbdPtir0-MKtuvHLBmtfQTJIqyLuBdR-lzGE=w800"
+                    alt="Oven Cheese Pasta"
+                  />
+                </div>
+                <div class="menu-card-content">
+                  <h3 class="menu-card-title">Oven Cheese Pasta</h3>
+                  <p class="menu-card-subtitle">오븐 치즈 파스타</p>
+                </div>
+              </article>
+            </a>
+          </div>
+
+          <div class="col" data-category="pasta">
+            <a
+              href="dish-detail.html?dish=red-cream-pasta"
+              class="menu-card-link"
+            >
+              <article class="menu-card h-100">
+                <div class="menu-card-image">
+                  <img
+                    src="https://lh3.googleusercontent.com/zHGc1_mxl_MZR_D3D8gCtbRSUJ7_HNwEafAd-r7z7Py-EOUoT7_Irav0WfUD9Xt57JiYScSWFgyCWIPnpW5VZc7EXtv5VT4_j5lTzPndmYjFeadAjNd2Hw=w800"
+                    alt="Red Cream Pasta"
+                  />
+                </div>
+                <div class="menu-card-content">
+                  <h3 class="menu-card-title">Red Cream Pasta</h3>
+                  <p class="menu-card-subtitle">레드 크림 파스타</p>
+                </div>
+              </article>
+            </a>
+          </div>
+
+          <div class="col" data-category="pasta">
+            <a
+              href="dish-detail.html?dish=red-tomato-pasta"
+              class="menu-card-link"
+            >
+              <article class="menu-card h-100">
+                <div class="menu-card-image">
+                  <img
+                    src="https://lh3.googleusercontent.com/qL-y5J0J-jP4T8lzssviFaOhbUAHx5jD4pwSp1PnG17oM3DaiQie3AW8VPofckYpKnsQYETPW_Fo81-1imVSQtSe3Jeeh_VIno_STQZCtuZ6CTXOkFrW=w800"
+                    alt="Red Tomato Pasta"
+                  />
+                </div>
+                <div class="menu-card-content">
+                  <h3 class="menu-card-title">Red Tomato Pasta</h3>
+                  <p class="menu-card-subtitle">레드 토마토 파스타</p>
+                </div>
+              </article>
+            </a>
+          </div>
+
+          <div class="col" data-category="pasta">
+            <a
+              href="dish-detail.html?dish=red-curry-pasta"
+              class="menu-card-link"
+            >
+              <article class="menu-card h-100">
+                <div class="menu-card-image">
+                  <img
+                    src="https://lh3.googleusercontent.com/zlVyVyjfbtL8t8YdOWupafUF4O8Zr0fvP9BP1quojiIL1oE8vEJ7DrUHtzcpPppC-h1LR1J71Gvpnr_9JE4_HqZwcc-uwrs7RjsINzo1CkuXG_EuxLI_dw=w800"
+                    alt="Red Curry Pasta"
+                  />
+                </div>
+                <div class="menu-card-content">
+                  <h3 class="menu-card-title">Red Curry Pasta</h3>
+                  <p class="menu-card-subtitle">레드 커리 파스타</p>
+                </div>
+              </article>
+            </a>
+          </div>
+
+          <div class="col" data-category="pasta">
+            <a
+              href="dish-detail.html?dish=red-garlic-rossta"
+              class="menu-card-link"
+            >
+              <article class="menu-card h-100">
+                <div class="menu-card-image">
+                  <img
+                    src="https://lh3.googleusercontent.com/9k39z0ACWW_zg_K2K5ZPbECUDbz0XLGgpdqLMa-Bn6kOEys01wU2WPqzmgLfUY289npSOKvO4-Oqc8WNFE-KChKGZu6HZEkrl5W629aW9UedcO2awcPc_g=w800"
+                    alt="Red Garlic Rossta"
+                  />
+                </div>
+                <div class="menu-card-content">
+                  <h3 class="menu-card-title">Red Garlic Rossta</h3>
+                  <p class="menu-card-subtitle">레드 갈릭 로스타</p>
+                </div>
+              </article>
+            </a>
+          </div>
+
+          <div class="col" data-category="pasta">
+            <a
+              href="dish-detail.html?dish=red-soy-pasta"
+              class="menu-card-link"
+            >
+              <article class="menu-card h-100">
+                <div class="menu-card-image">
+                  <img
+                    src="https://lh3.googleusercontent.com/DpHV0ego7JkF68GW731M6taexGW-NYA5n8M5PV3dlmhgGi3QcEzHbredlft4e3swKbD4JUjvWEhuD49qQUbBIfqhe6wBG_KpH3hkyjvEAw9_ekceTN8hdA=w800"
+                    alt="Red Soy Pasta"
+                  />
+                </div>
+                <div class="menu-card-content">
+                  <h3 class="menu-card-title">Red Soy Pasta</h3>
+                  <p class="menu-card-subtitle">레드 간장 파스타</p>
+                </div>
+              </article>
+            </a>
+          </div>
+
+          <div class="col" data-category="salad">
+            <a
+              href="dish-detail.html?dish=chamnamul-coucle"
+              class="menu-card-link"
+            >
+              <article class="menu-card h-100">
+                <div class="menu-card-image">
+                  <img
+                    src="https://lh3.googleusercontent.com/bRkrd-J2cixorNgDjij1E6q-OVyvDrsfvdTc1KPQHyhjNGnSQITtBRzFnqfXm-dpFDOY2EPEcsNVTMXN2o_Z4ucbU5uVFgPnNcmDPbEjzs9UAp5SsxuF2mQ=w800"
+                    alt="Chamnamul Coucle Cold Pasta"
+                  />
+                </div>
+                <div class="menu-card-content">
+                  <h3 class="menu-card-title">Chamnamul Coucle Cold Pasta</h3>
+                  <p class="menu-card-subtitle">참나물 꼬막 콜드 샐러드</p>
+                </div>
+              </article>
+            </a>
+          </div>
+
+          <div class="col" data-category="salad">
+            <a
+              href="dish-detail.html?dish=baby-napoli-salad"
+              class="menu-card-link"
+            >
+              <article class="menu-card h-100">
+                <div class="menu-card-image">
+                  <img
+                    src="https://lh3.googleusercontent.com/jT4MyDQfkzo3uSWVJtcGk0SnyvcponGZNJQW_aSHTaK68wN3lG7FtH2hK84wopYvPksMUx8ziHAPVx_Q7fnHW0PsIoPJySvCQa4ZWB2GfiuHblosp0yVfeY=w800"
+                    alt="Baby Napoli Cabbage Salad"
+                  />
+                </div>
+                <div class="menu-card-content">
+                  <h3 class="menu-card-title">Baby Napoli Cabbage Salad</h3>
+                  <p class="menu-card-subtitle">베이비 나폴리 양배추 샐러드</p>
+                </div>
+              </article>
+            </a>
+          </div>
+
+          <div class="col" data-category="poke">
+            <a href="dish-detail.html?dish=ragu-poke" class="menu-card-link">
+              <article class="menu-card h-100">
+                <div class="menu-card-image">
+                  <img
+                    src="https://lh3.googleusercontent.com/IUaB6SaXv9r4yFztetma5lfcDCmwULNQmc3BfxR8moCYvTWh9JbP3onDBmcKcfNPkS4pw8Qy5uQmem46LUZcA9nw7m6EQN_8H09gVv-Io6OjDtyDYisDM1E=w800"
+                    alt="Ragu Poke"
+                  />
+                </div>
+                <div class="menu-card-content">
+                  <h3 class="menu-card-title">Ragu Poke</h3>
+                  <p class="menu-card-subtitle">라구 포케</p>
+                </div>
+              </article>
+            </a>
+          </div>
+
+          <div class="col" data-category="poke">
+            <a
+              href="dish-detail.html?dish=izo-steak-poke"
+              class="menu-card-link"
+            >
+              <article class="menu-card h-100">
+                <div class="menu-card-image">
+                  <img
+                    src="https://lh3.googleusercontent.com/M9Tpsvk3isPzFFm8H0Il7E4MorgvtB7sIQ-dSKGwWuvxsJLBIu5qkh-yFI8QNtN3jeZbDmV4bkrSUi34KRiFyJu_FDQ8k0fP7itkEh8G9x8R0weNGuNaMA=w800"
+                    alt="Izo Steak Poke"
+                  />
+                </div>
+                <div class="menu-card-content">
+                  <h3 class="menu-card-title">Izo Steak Poke</h3>
+                  <p class="menu-card-subtitle">이조 스테이크 포케</p>
+                </div>
+              </article>
+            </a>
+          </div>
+
+          <div class="col" data-category="poke">
+            <a
+              href="dish-detail.html?dish=izo-galbi-poke"
+              class="menu-card-link"
+            >
+              <article class="menu-card h-100">
+                <div class="menu-card-image">
+                  <img
+                    src="https://lh3.googleusercontent.com/PNDukQzxZFktECM6IFNPaUqtsr_cG42RulKwvu1mxNH0YhxVe-lJCcB89EF2o5vDuHi_iH0bOqIdAUcRIeBKVggaBNX6SQYU3dRbSx1Svs4NCRKMyyEDyn0=w800"
+                    alt="Izo Galbi Poke"
+                  />
+                </div>
+                <div class="menu-card-content">
+                  <h3 class="menu-card-title">Izo Galbi Poke</h3>
+                  <p class="menu-card-subtitle">이조 갈비 포케</p>
+                </div>
+              </article>
+            </a>
+          </div>
+
+          <div class="col" data-category="poke">
+            <a
+              href="dish-detail.html?dish=izo-salmon-poke"
+              class="menu-card-link"
+            >
+              <article class="menu-card h-100">
+                <div class="menu-card-image">
+                  <img
+                    src="https://lh3.googleusercontent.com/HIGZDJB1yJy7e53krC7SKKBZOk-ilj1tlTvQiSJkKHdP274QXTwJu-hrav5-HE_63iJPLb9b2kWS9txRUBWoUmEAwZm-3wsDfgrNdNoEdM48cpuJWkSS1Q=w800"
+                    alt="Izo Salmon Poke"
+                  />
+                </div>
+                <div class="menu-card-content">
+                  <h3 class="menu-card-title">Izo Salmon Poke</h3>
+                  <p class="menu-card-subtitle">이조 연어 포케</p>
+                </div>
+              </article>
+            </a>
+          </div>
+
+          <div class="col" data-category="poke">
+            <a
+              href="dish-detail.html?dish=izo-chicken-poke"
+              class="menu-card-link"
+            >
+              <article class="menu-card h-100">
+                <div class="menu-card-image">
+                  <img
+                    src="https://lh3.googleusercontent.com/3pKjeyMpYSFOW1nzOO6NvcYtvkLlMQE-ZP6QeWN1IUj9Ggj_vvADq3h29kttO1QCmMHsBrhGKwxyZCofpN8wNFUn3Q1xI2iEU3EESIpLfYhq1vdfr873=w800"
+                    alt="Izo Chicken Poke"
+                  />
+                </div>
+                <div class="menu-card-content">
+                  <h3 class="menu-card-title">Izo Chicken Poke</h3>
+                  <p class="menu-card-subtitle">이조 치킨 포케</p>
+                </div>
+              </article>
+            </a>
+          </div>
+
+          <div class="col" data-category="steak">
+            <a href="dish-detail.html?dish=izo-steak" class="menu-card-link">
+              <article class="menu-card h-100">
+                <div class="menu-card-image">
+                  <img
+                    src="https://lh3.googleusercontent.com/vf9IkDL__iBwMGdBSpraNqEm1VCxyUTS4FSm_oM4GfvfSGpCY174iLH2or7gBFIYFfrMSxMXvTQvQmyKmRTmIU9cUu1H96RepXj6Nrf24quWZPJWXLw4WQ=w800"
+                    alt="Izo Steak"
+                  />
+                </div>
+                <div class="menu-card-content">
+                  <h3 class="menu-card-title">Izo Steak</h3>
+                  <p class="menu-card-subtitle">이조 스테이크</p>
+                </div>
+              </article>
+            </a>
+          </div>
+
+          <div class="col" data-category="steak">
+            <a
+              href="dish-detail.html?dish=izo-chicken-steak"
+              class="menu-card-link"
+            >
+              <article class="menu-card h-100">
+                <div class="menu-card-image">
+                  <img
+                    src="https://lh3.googleusercontent.com/hzOnXPQI4Ufi8lOPqRfw1eUXTgQQn3Zbq8Ag9tvYIWVhcjo3vvkB6lD8KZYvtn3vlPp-Q8U6N4veQ8eW6C4KS25OwZLoeMyFk8_9Ug-eQpzSGo-35uWcqsc=w800"
+                    alt="Izo Chicken Steak"
+                  />
+                </div>
+                <div class="menu-card-content">
+                  <h3 class="menu-card-title">Izo Chicken Steak</h3>
+                  <p class="menu-card-subtitle">이조 치킨 스테이크</p>
+                </div>
+              </article>
+            </a>
+          </div>
+
+          <div class="col" data-category="steak">
+            <a
+              href="dish-detail.html?dish=red-galbi-stew"
+              class="menu-card-link"
+            >
+              <article class="menu-card h-100">
+                <div class="menu-card-image">
+                  <img
+                    src="https://lh3.googleusercontent.com/Ts9tApsWx_A7Xu2Z70zp3_85VJSa8RLLSliXN5vDAaFybchNAfzq-2uqYGbX97T5yH4qTn6x7eGXOFSGVg6U6fHUoNW-fb5_UDPtShaO5JcQJnnn5R99=w800"
+                    alt="Red Galbi Stew"
+                  />
+                </div>
+                <div class="menu-card-content">
+                  <h3 class="menu-card-title">Red Galbi Stew</h3>
+                  <p class="menu-card-subtitle">레드 갈비 스튜</p>
+                </div>
+              </article>
+            </a>
+          </div>
+
+          <div class="col" data-category="steak">
+            <a
+              href="dish-detail.html?dish=red-cream-galbi-stew"
+              class="menu-card-link"
+            >
+              <article class="menu-card h-100">
+                <div class="menu-card-image">
+                  <img
+                    src="https://lh3.googleusercontent.com/DEvLi_x8Vgpqmg77tx_NOA4cgqdj1D8hQItHbYV2mwgbhkmIA-_uIOhQw5X-5GAv35VhQUV934r303rKIRoKjr2GN1mWCk3Vg4d5mRD4YU86TKJr2Zczvw=w800"
+                    alt="Red Cream Galbi Stew"
+                  />
+                </div>
+                <div class="menu-card-content">
+                  <h3 class="menu-card-title">Red Cream Galbi Stew</h3>
+                  <p class="menu-card-subtitle">레드 크림 갈비 스튜</p>
+                </div>
+              </article>
+            </a>
+          </div>
+
+          <div class="col" data-category="steak">
+            <a
+              href="dish-detail.html?dish=red-tomato-galbi-stew"
+              class="menu-card-link"
+            >
+              <article class="menu-card h-100">
+                <div class="menu-card-image">
+                  <img
+                    src="https://lh3.googleusercontent.com/vld1Q2LPv_2qpf0N-tZ0Bm-q6UEOo61YVKiIxcOWuCf8Ro1ZMOB2KlIhenZ7lPYNvsKWrxr_CooiwLlNKyp6INi8-XG7JRKrhGOasAJ62SFPE7nEWHXn=w800"
+                    alt="Red Tomato Galbi Stew"
+                  />
+                </div>
+                <div class="menu-card-content">
+                  <h3 class="menu-card-title">Red Tomato Galbi Stew</h3>
+                  <p class="menu-card-subtitle">레드 토마토 갈비 스튜</p>
+                </div>
+              </article>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
     <div id="footer-placeholder"></div>
-    <!-- 부트스트랩 -->
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
   </body>
 </html>

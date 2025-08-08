@@ -78,6 +78,7 @@
 - 히어로 높이: 100vh → 70vh
 - 네비게이션: 햄버거 메뉴로 변환
 
+
 ## CSS 중복 제거
 
 ### Before (비효율적)
@@ -185,6 +186,14 @@ git clone https://github.com/Izoria-team2-htmlcss4-gp-coalnoo/Izoria-team2-htmlc
 ```
 
 브라우저에서 `index.html` 파일을 열어 실행하세요.
+
+
+## 브라우저 호환성
+
+- Chrome 90+
+- Firefox 88+  
+- Safari 14+
+- Edge 90+
 
 
 # HTML/CSS 코딩 규칙 가이드
@@ -330,10 +339,5 @@ git clone https://github.com/Izoria-team2-htmlcss4-gp-coalnoo/Izoria-team2-htmlc
 }
 ```
 
-## 브라우저 호환성
 
-- Chrome 90+
-- Firefox 88+  
-- Safari 14+
-- Edge 90+
 
