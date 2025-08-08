@@ -22,3 +22,11 @@
     padding: 80px 0px 60px 0px;
     justify-content: center;
 }
+
+.faq-answer{
+    padding-left: 1.2rem;
+}
+
+body{
+    line-height: 2rem;
+}
