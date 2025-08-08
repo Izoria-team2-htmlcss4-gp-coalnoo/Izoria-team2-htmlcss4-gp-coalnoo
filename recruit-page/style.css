@@ -1,0 +1,71 @@
+@media screen and (max-width: 48rem) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    .hero-section {
+        height: 70vh;
+    }
+    .menu-card {
+        margin-bottom: 2rem;
+    }
+}
+
+/* 기본: 왼쪽 정렬 (모든 화면에서) */
+.left, .right {
+  text-align: left;
+}
+
+/* 모바일 + 태블릿에서만 가운데 정렬 */
+@media screen and (max-width: 61.99rem) {
+  .left, .right {
+    text-align: center;
+  }
+
+  .right{
+        margin-top: 60px;
+    }
+}
+
+.main-first{
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 1px solid #555555;
+    display: inline-block;
+    padding: 2rem;
+    font-size:1.6rem;
+}
+.main-second{
+    padding: 80px 0px 60px 0px;
+    justify-content: center;
+}
+.point-color{
+    color: #ffb87d;
+}
+
+intput{
+    width: 100%
+}
+
+.left{
+width: 390px;
+padding: 0px 15px;
+}
+
+.right{
+width: 780px 
+padding: 0px 15px;
+}
+
+.form-group h3{
+    font-size: 13px;
+    color: #555555;
+    margin: 10px 0px;
+}
+
+.form-group{
+    width: 700
+    margin: 0px 0px 15px
+}
+
+p{
+    font-size: 10px;
+}
