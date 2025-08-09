@@ -1,81 +1,82 @@
 @media screen and (max-width: 48rem) {
-    .hero-title {
-        font-size: 2.5rem;
-    }
-    .hero-section {
-        height: 70vh;
-    }
-    .menu-card {
-        margin-bottom: 2rem;
-    }
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  .hero-section {
+    height: 70vh;
+  }
+  .menu-card {
+    margin-bottom: 2rem;
+  }
 }
-.py-5{
-    padding-top: 3rem;
+.py-5 {
+  padding-top: 3rem;
 }
-.my-5{
-    margin-top: 3rem;
+.my-5 {
+  margin-top: 3rem;
 }
 
-.title{
-    font-family: Nanum Gothic;
-    font-weight: 400;
-    font-size: 1.6rem;
-    border-bottom: 1px solid #555555;
-    letter-spacing: 2px;
-    padding-bottom: 2rem;
-    display: inline-block;
-    color: #182244;
+.title {
+  font-family: Nanum Gothic;
+  font-weight: 400;
+  font-size: 1.6rem;
+  border-bottom: 1px solid #555555;
+  letter-spacing: 2px;
+  padding-bottom: 2rem;
+  display: inline-block;
+  color: #182244;
 }
-/* 기본: 왼쪽 정렬 (모든 화면에서) */
-.left, .right {
+/* 기본: 왼쪽 정렬 (모든 화면에서) /
+.left,
+.right {
   text-align: left;
 }
 
-/* 모바일 + 태블릿에서만 가운데 정렬 */
+/ 모바일 + 태블릿에서만 가운데 정렬 */
 @media screen and (max-width: 61.99rem) {
-  .left, .right {
+  .left,
+  .right {
     text-align: center;
   }
 
-  .right{
-        margin-top: 60px;
-    }
+  .right {
+    margin-top: 60px;
+  }
 }
 
-
-.main-second{
-    padding: 80px 0px 60px 0px;
-    justify-content: center;
+.main-second {
+  padding: 80px 0px 60px 0px;
+  justify-content: center;
 }
-.point-color{
-    color: #ffb87d;
-}
-
-intput{
-    width: 100%
+.point-color {
+  color: #ffb87d;
 }
 
-.left{
-width: 390px;
-padding: 0px 15px;
+intput {
+  width: 100%;
 }
 
-.right{
-width: 780px 
-padding: 0px 15px;
+.left {
+  width: 390px;
+  padding: 0px 15px;
 }
 
-.form-group h3{
-    font-size: 13px;
-    color: #555555;
-    margin: 10px 0px;
+.right {
+  width: 780px;
+  padding: 0px 15px;
 }
 
-.form-group{
-    width: 700
-    margin: 0px 0px 15px
+.form-group h3 {
+  font-size: 13px;
+  color: #555555;
+  margin: 10px 0px;
 }
 
-p{
-    font-size: 10px;
+.form-group {
+  width: 700;
+  margin: 0px 0px 15px;
+}
+
+p {
+  font-size: 10px;
 }
