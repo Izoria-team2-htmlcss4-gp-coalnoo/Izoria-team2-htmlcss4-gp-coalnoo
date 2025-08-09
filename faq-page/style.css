@@ -34,10 +34,17 @@
 .faq-answer{
     padding-left: 1.2rem;
 }
+
 .accordion-body{
     color: #555555;
 }
 
 body{
     line-height: 2rem;
+}
+
+#footer-placeholder{
+    position:fixed;
+    bottom: 0;
+    width: 100%;
 }
