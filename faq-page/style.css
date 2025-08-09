@@ -19,11 +19,14 @@
 }
 
 .title{
+   font-family: Nanum Gothic;
     font-weight: 400;
     font-size: 1.6rem;
-    border-bottom:1px solid #555555;
+    border-bottom: 1px solid #555555;
     letter-spacing: 2px;
     padding-bottom: 2rem;
+    display: inline-block;
+    color: #182244;
 }
 
 .main-second{
