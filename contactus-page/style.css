@@ -1,0 +1,97 @@
+.border-chk{
+  border: 3px solid palevioletred;
+}
+a{
+  color: var(--second-color);
+}
+input{
+  width: 100%;
+}
+textarea{
+  resize: none;
+}
+.menu-title {
+  font-family: Nanum Gothic;
+  font-weight: 400;
+  font-size: 1.6rem;
+  border-bottom: 1px solid #555555;
+  letter-spacing: 2px;
+  padding-bottom: 2rem;
+  display: inline-block;
+  color: var(--second-color);
+}
+
+.menu-title-line {
+  width: 50px;
+  height: 2px;
+  background-color: var(--second-color);
+}
+.font-for-upper{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+}
+.title-sec{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid #000; */
+}
+.title {
+  height: 200px;
+  line-height: 200px;
+text-align: center;
+  
+  letter-spacing: 0.2rem;
+  font-size: 1.6rem;
+}
+.line-design-under-title{
+  height: 1px;
+  width: calc(1.2rem * 5);
+  background-color: var(--second-color);
+  position: relative;
+  top: -1rem;
+}
+section{
+  background-color: #f3f3f3;
+}
+.form-wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form{
+  width: 100%;
+}
+.form-wrap input::placeholder, .form-wrap textarea::placeholder{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.08rem;
+}
+.form-check-label, .form-check>a{
+  font-size: 0.8rem;
+  color: #888;
+}
+.form-check a:hover{
+  color: var(--second-color);
+}
+.button-style{
+  font-size: 0.7rem;
+  font-weight: 500;
+  /* border: 2px solid #444; */
+  color: #222;
+  background-color: transparent;
+  border-radius: 0;
+  text-align: center;
+}
+.btn-position{
+  display: flex;
+  justify-content: center;
+}
+

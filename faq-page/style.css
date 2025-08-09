@@ -1,0 +1,53 @@
+@media screen and (max-width: 48rem) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    .hero-section {
+        height: 70vh;
+    }
+    .menu-card {
+        margin-bottom: 2rem;
+    }
+}
+
+
+.py-5{
+    padding-top: 3rem;
+}
+.my-5{
+    margin-top: 3rem;
+}
+
+.title{
+   font-family: Nanum Gothic;
+    font-weight: 400;
+    font-size: 1.6rem;
+    border-bottom: 1px solid #555555;
+    letter-spacing: 2px;
+    padding-bottom: 2rem;
+    display: inline-block;
+    color: #182244;
+}
+
+.main-second{
+    padding: 80px 0px 60px 0px;
+    justify-content: center;
+}
+
+.faq-answer{
+    padding-left: 1.2rem;
+}
+
+.accordion-body{
+    color: #555555;
+}
+
+body{
+    line-height: 2rem;
+}
+
+#footer-placeholder{
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+}

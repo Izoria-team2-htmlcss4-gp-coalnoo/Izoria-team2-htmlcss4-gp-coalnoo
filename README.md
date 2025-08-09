@@ -76,6 +76,8 @@
 ### 모바일 최적화
 - 제목 크기: 4rem → 2.5rem
 - 히어로 높이: 100vh → 70vh
+- 네비게이션: 햄버거 메뉴로 변환
+
 
 ## CSS 중복 제거
 
@@ -184,6 +186,7 @@ git clone https://github.com/Izoria-team2-htmlcss4-gp-coalnoo/Izoria-team2-htmlc
 ```
 
 브라우저에서 `index.html` 파일을 열어 실행하세요.
+
 
 ## 브라우저 호환성
 
@@ -335,6 +338,7 @@ git clone https://github.com/Izoria-team2-htmlcss4-gp-coalnoo/Izoria-team2-htmlc
     /* 내비게이션 스타일 */
 }
 ```
+
 
 
 
